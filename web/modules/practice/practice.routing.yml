@@ -23,12 +23,20 @@ practice.entity_arg:
   requirements:
     _permission: 'access content'
     _access_check_author: 'TRUE'
+    _custom_access: 'Drupal\practice\Controller\PracticeController::accessAuthorCheck'
   options:
     parameters:
       node1:
         type: entity:node
       node2:
         type: entity:node
+        
+practice.simple_form:
+  path: '/simpleform'
+  defaults: 
+    _form: Drupal\practice\Form\SimpleForm
+  requirements: 
+    _permission: 'access training content'        
             
     
             

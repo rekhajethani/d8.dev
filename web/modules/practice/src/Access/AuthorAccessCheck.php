@@ -13,12 +13,11 @@ class AuthorAccessCheck implements AccessInterface {
 		$this->current_user;
 	}
 	public function access(Node $node1, Node $node2) {
-		if ($node->getOwnerId () == $this->current_user->Id ()){
-			return AccessResult::allowed();
+		if ($node->getOwnerId () == $this->current_user->Id ()) {
+			return AccessResult::allowed ();
+		}
+		{
+			return AccessResult::forbidden ();
+		}
 	}
-	{
-	return AccessResult::forbidden ();
-	}
-
 }
-
