@@ -1,0 +1,11 @@
+practice.new_static_tab: 
+  title: New static 
+  route_name: practice.static_demo
+  base_route: practice.new_static_tab
+
+
+practice.new_dynamic_tab:
+  title: New Dynamic
+  route_name: practice.arg_demo
+  base_route: practice.new_static_tab
+  

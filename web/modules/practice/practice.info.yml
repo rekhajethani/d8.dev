@@ -1,0 +1,6 @@
+name: Practice
+description: Created for parctice.
+package: Custom
+version: 8.3.x
+type: module
+core: 8.x

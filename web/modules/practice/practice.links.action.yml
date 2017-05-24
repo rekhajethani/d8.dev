@@ -1,0 +1,6 @@
+practice.new_action_link: 
+  title: Add Content
+  route_name: node.add_page
+  appears_on: 
+    - practice.entity_arg
+  

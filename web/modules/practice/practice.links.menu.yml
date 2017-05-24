@@ -1,0 +1,5 @@
+practice.mymenu_link:
+  title: Static Content Demo
+  description: To learn how to add menu link
+  route_name: practice.static_demo
+  parent: system.admin_config_system

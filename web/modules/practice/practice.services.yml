@@ -1,0 +1,7 @@
+services: 
+  practice.author_access_check: 
+    class: Drupal\practice\Access\AuthorAccessCheck
+    arguments: ['@current_user']
+    tags: 
+      - {name: 'access_check', applies_to: '_access_check_author'}
+      

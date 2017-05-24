@@ -1,0 +1,35 @@
+practice.static_demo:
+  path: '/static-content'
+  defaults:
+    _controller: \Drupal\practice\Controller\PracticeController::staticContent
+  requirements:
+    _permission: 'access training content' 
+   
+
+practice.arg_demo: 
+  path: '/arg-content/{arg1}'
+  defaults:
+    _controller: \Drupal\practice\Controller\PracticeController::argContent
+    arg1: 8
+  requirements:
+    _permission: 'access content' 
+    
+
+practice.entity_arg: 
+  path: '/list/{node1}/{node2}'
+  defaults:
+    _controller: \Drupal\practice\Controller\PracticeController::entityArgDemo
+    
+  requirements:
+    _permission: 'access content'
+    _access_check_author: 'TRUE'
+  options:
+    parameters:
+      node1:
+        type: entity:node
+      node2:
+        type: entity:node
+            
+    
+            
+      
