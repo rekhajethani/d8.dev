@@ -37,7 +37,23 @@ practice.simple_form:
     _form: Drupal\practice\Form\SimpleForm
   requirements: 
     _permission: 'access training content'        
-            
+
+practice.weather_config_form:
+  path: 'admin/weather-config'
+  defaults:
+    _form: Drupal\practice\Form\WeatherConfigForm
+    title: 'Weather configuration'
+  requirements:
+    _permission: 'access training content' 
+    
+      
+practice.qualification:
+  path: '/qualification'
+  defaults: 
+    _form: Drupal\practice\Form\qualification
+    title: Qualification
+  requirements:
+    _permission: 'access training content'              
     
             
       

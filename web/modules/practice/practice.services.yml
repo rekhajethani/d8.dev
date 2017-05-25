@@ -8,3 +8,9 @@ services:
   practice.dbwrapper:
     class: Drupal\practice\dbWrapper
     arguments: ['@database']
+    
+  practice.resonse_subscriber:
+    class: Drupal\practice\EventSubscriber\ResponseSubscriber
+    tags: 
+      - {name: 'event_subscriber'} 
+    
