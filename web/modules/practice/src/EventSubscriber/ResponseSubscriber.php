@@ -19,6 +19,5 @@ class ResponseSubscriber implements EventSubscriberInterface {
 		$response->headers->add ( [
 				'hello' => 'world'
 		] );
-		$response->send ();
 	}
 }

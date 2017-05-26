@@ -39,13 +39,14 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface 
 		$weather_data = Json::decode ( $json_response );
 
 		return [
-				'#theme' => 'weather_widget',
-				'#weather_data' => $weather_data,
-				'#attached' => [
-						'library' => [
-								'practice/weather_widget'
-						]
-				]
+				'#markup' => 'Hello WOrld'
+			// '#theme' => 'weather_widget',
+			// '#weather_data' => $weather_data
+			// '#attached' => [
+			// 'library' => [
+			// 'practice/weather_widget'
+			// ]
+			// ]
 
 		];
 	}
