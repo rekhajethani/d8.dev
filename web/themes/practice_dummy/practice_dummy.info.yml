@@ -1,0 +1,16 @@
+name: practice_dummy
+description: Drupal 8 dummy theme
+core: 8.x
+version: 8.3.x
+
+base theme: bartik
+type: theme
+
+libraries: 
+  - practice_dummy/global-styling
+regions: 
+  header: Header
+  left_sidebar: Left sideBar
+  content: Content
+  right_sidebar: Right side Bar
+  fotter: Footer  

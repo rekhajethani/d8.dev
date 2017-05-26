@@ -1,0 +1,4 @@
+<?php
+function practice_dummy_preprocess_page(array &$variables) {
+	$variables ['sub_slogan'] = theme_get_setting ( 'sub_slogan' );
+}
